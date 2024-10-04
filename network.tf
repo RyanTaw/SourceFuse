@@ -20,7 +20,7 @@ resource "aws_internet_gateway" "gw" {
 # Subnets
 resource "aws_subnet" "public_subnet" {
   vpc_id     = aws_vpc.vpc.id
-  cidr_block = "10.0.1.0/24"
+  cidr_block = "10.0.0.0/24"
   tags = local.common_tags
 }
 resource "aws_subnet" "private_subnet" {
